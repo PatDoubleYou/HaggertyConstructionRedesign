@@ -1,0 +1,131 @@
+html {
+    background-color: #222222;
+    color: #EEEEEE;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: apotek, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    margin: 0;
+    background-color: #222222;
+    background-image: url("channel_banner.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    opacity: 5;
+    line-height: 1.5em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+article {
+    padding: 11em;
+    background: #222222;
+    align-self: center;
+    margin: auto;
+    max-width: 100%;
+}
+
+.pfp {
+    width: 10em;
+    height: auto;
+    border-radius: 2em;
+    align-self: center;
+}
+
+.card:hover {
+    background-color: #333333;
+    border-radius: 2em;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 1em;
+    margin: 1em;
+    background: #222222;
+    border-radius: 1em;
+    align-self: center;
+    width: 50%;
+}
+
+.card-title {
+    font-size: 3em;
+}
+
+.card-image {
+    grid-column: 1;
+}
+
+.card-body {
+    grid-column: 2;
+    margin: none;
+    padding: 1em;
+}
+
+
+.card-footer {
+    margin: none;
+    grid-row: 2;
+    grid-column: 1 / 4;
+}
+
+button {
+    background: #222266;
+    font-size: 3em;
+    padding: 10px;
+    border-radius: 0.25em;
+    color: #EEEEEE;
+    width: 100%;
+}
+
+@media (max-width: 1500px) {
+    section {
+        flex-direction: column;
+    }
+    
+    article{
+        width: auto;
+    }
+
+    .card {
+        width: auto;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+}
+
+h1 {
+    font-family: apotek-extrawide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    line-height: 3em;
+    margin: 0;
+    font-size: 5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.footer {
+    width: 100%;
+    margin: auto;
+    padding: 5em;
+    background-color: #222266;
+}
