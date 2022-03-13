@@ -51,6 +51,10 @@ body {
     gap: 0px;
 }
 
+.container-socials {
+    display: flex;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -59,6 +63,13 @@ section {
 }
 
 .blurb-container {
+    display: flex;
+    flex-direction: column;
+
+    grid-row: 3;
+}
+
+.socials-blurb-container {
     display: flex;
     flex-direction: column;
 
@@ -230,6 +241,7 @@ li a {
         grid-auto-rows: minmax(100px, auto);
         gap: 0px;
         padding: 5em;
+        padding-top: 0;
         justify-items: center;
     }
 
@@ -255,6 +267,12 @@ li a {
         border-radius: 10px;
         border-top-right-radius: 50px;
 
+    }
+
+    .socials-header-image {
+        max-width: 20vw;
+        border-bottom-left-radius: 500px;
+        border-bottom-right-radius: 500px;
     }
 
     .card {
