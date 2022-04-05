@@ -5,16 +5,45 @@
 <head>
     <title>Chat Commands</title>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.typekit.net/qtk1dnn.css">
 
 </head>
 
 <body>
-    <div class="container">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PATDOUBLEYOU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link active" aria-current="page" href="socials.html">SOCIALS</a>
+                    <a class="nav-link" href="#">CHAT COMMANDS</a>
+                    <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-md">
+
         <h1 class="title">PATDOUBLEYOU</h1>
 
-        <div class="blurb-container commands-blurb-container">
+        <!--
+
             <div class="blurb chat-bg-image">
                 <h2>Chat Commands</h2>
                 <ul>
@@ -28,15 +57,43 @@
                     <li><span class="command">!setup</span>  |  See Pat's PC specifications.</li>
                 </ul>
             </div>
-        </div>
+
+        -->
+
+        <dl class="row blurb chat-bg-image">
+            <dt class="col-sm-3"><h3>Chat Command</h3></dt>
+            <dd class="col-sm-9"><h3>Description</h3></dd>
+           
+            <dt class="col-sm-3 command">!intro</dt>
+            <dd class="col-sm-9">Say hello to BotDoubleYou!</dd>
+           
+            <dt class="col-sm-3 command">!socials</dt>
+            <dd class="col-sm-9">Sends links to all of Pat's social media channels.</dd>
+ 
+            <dt class="col-sm-3 command">!youtube</dt>
+            <dd class="col-sm-9">Sends a link to Pat's YouTube Channel.</dd>
+ 
+            <dt class="col-sm-3 command">!hug {@username}</dt>
+            <dd class="col-sm-9">Hugs another user in chat! :D</dd>
+ 
+            <dt class="col-sm-3 command">!discord</dt>
+            <dd class="col-sm-9">Sends a link to the Pat's People discord server.</dd>
+ 
+            <dt class="col-sm-3 command">!uptime</dt>
+            <dd class="col-sm-9">See how long Pat has been streaming today.</dd>
+ 
+            <dt class="col-sm-3 command">!lurk</dt>
+            <dd class="col-sm-9">Let the chat know that you will be quietly supporting.</dd>
+ 
+            <dt class="col-sm-3 command">!setup</dt>
+            <dd class="col-sm-9">See Pat's PC specifications.</dd>
+ 
+            <dt class="col-sm-3 command">!trip</dt>
+            <dd class="col-sm-9">Begin your journey in Pat's custom coded chat game!</dd>
+          
+          </dl>
 
 
-    </div>
-
-    <div class="footer">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#">SOCIALS</a></li>
-        <li><a href="#">CHAT COMMANDS</a></li>
     </div>
 
 </body>
