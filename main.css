@@ -1,11 +1,11 @@
-html {
+/*html {
     display: block;
     height: 100%;
     min-height: 100%;
     min-width: 100%;
     width: 100%;
     overflow: auto;
-}
+}*/
 
 body {
     /*
@@ -15,10 +15,11 @@ body {
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
-    */
+    
     overflow: auto;
     overflow-x: hidden;
     overflow-y: hidden;
+    */
     background-color: #111111;
     color: #EEEEEE;
     font-family: sans-serif;
@@ -135,15 +136,6 @@ section {
     grid-column: 1 / 4;
 }
 
-button {
-    background: #222266;
-    font-size: 3em;
-    padding: 10px;
-    border-radius: 0.25em;
-    color: #EEEEEE;
-    width: 100%;
-}
-
 .title {
     padding: 1em;
     grid-row: 1;
@@ -158,36 +150,10 @@ h1 {
     color: white;
     line-height: 3em;
     margin: 0;
-    font-size: 3em;
 }
 
 p {
     font-size: 1.5em;
-}
-
-.nav {
-    overflow: hidden;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-
-    grid-row: 1;
-    grid-column: 1 / 4;
-}
-
-.nav-link {
-    height: 10vh;
-    flex-grow: 1;
-    align-items: center;
-    align-content: center;
-    font-size: 2em;
-    margin: auto;
-    background-color: #222222;
-    color:#EEEEEE;
 }
 
 .footer {
@@ -206,10 +172,6 @@ p {
 
 ul, li {
     list-style-type: none;
-}
-
-li a {
-    padding: 1em;
 }
 
 .chat-bg-image {
@@ -232,6 +194,12 @@ li a {
 
 .command {
     color: rgb(0, 206, 206);
+}
+
+.socials-header-image {
+    max-width: 20vw;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
 }
 
 @media (min-width: 1500px) {
@@ -267,12 +235,6 @@ li a {
         border-radius: 10px;
         border-top-right-radius: 50px;
 
-    }
-
-    .socials-header-image {
-        max-width: 20vw;
-        border-bottom-left-radius: 500px;
-        border-bottom-right-radius: 500px;
     }
 
     .card {
