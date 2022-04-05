@@ -8,18 +8,13 @@
 }*/
 
 body {
-    /*
-    background-color: #222222;
-    background-image: url("channel_banner.png");
+    
+    background-image: url("concrete.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
     
-    overflow: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    */
     background-color: #111111;
     color: #EEEEEE;
     font-family: sans-serif;
@@ -178,7 +173,7 @@ ul, li {
 }
 
 .command {
-    color: rgb(0, 206, 206);
+    color: #0378a6;
 }
 
 .socials-header-image {
