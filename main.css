@@ -21,11 +21,11 @@ body {
     font-family: apotek, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.2em;
 
     margin: 0;
     opacity: 5;
-    line-height: 2em;
+    line-height: 1.5em;
 
     /*
     min-height: 100%;
@@ -94,9 +94,13 @@ section {
 }
 
 .title {
-    padding: 1em;
-    grid-row: 1;
-    grid-column: 1 / 4;
+    font-family: apotek-extrawide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    line-height: 3em;
+    margin: 0;
 
     animation-duration: 1.25s;
     animation-name: fade;
@@ -142,34 +146,6 @@ section {
 
 .btn6 {
     animation-delay: 0.6s;
-}
-
-h1 {
-    font-family: apotek-extrawide, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    color: white;
-    line-height: 3em;
-    margin: 0;
-}
-
-p {
-    font-size: 1.5em;
-}
-
-.footer {
-    grid-row: 5;
-    grid-column: 1 / 4;
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: nowrap;
-    font-size: 3em;
-    margin: auto;
-    padding: 1em;
-    background-color: #040407;
-    align-items: center;
-    justify-content: center;
 }
 
 ul, li {
