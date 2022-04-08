@@ -82,10 +82,22 @@ section {
     animation-name: slidefromleft;
 }
 
+#commands-table {
+    align-content: center;
+    animation-duration: 1s;
+    animation-name: slidefromleft;
+}
+
+@media (min-width: 1000px) {
+    #commands-table {
+        max-width: 70%;
+    }
+}
+
 @keyframes slidefromleft {
     from {
         opacity: 0;
-        margin-right: 100%;
+        margin-right: 10%;
     }
     to {
         opacity: 1;
