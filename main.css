@@ -82,14 +82,19 @@ section {
     animation-name: slidefromleft;
 }
 
-#commands-table {
+#commands-table, #commands-intro {
     align-content: center;
     animation-duration: 1s;
     animation-name: slidefromleft;
 }
 
-@media (min-width: 1000px) {
-    #commands-table {
+#socials-buttons {
+    align-content: center;
+    align-items: center;
+}
+
+@media (min-width: 990px) {
+    #commands-table, #commands-intro, #socials-buttons {
         max-width: 70%;
     }
 }
