@@ -21,7 +21,7 @@ body {
     font-family: apotek, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1.5rem;
 
     margin: 0;
     opacity: 5;
@@ -116,8 +116,8 @@ section {
     font-style: normal;
     text-align: center;
     color: white;
-    line-height: 3em;
     margin: 0;
+    padding-top: 2rem;
 
     animation-duration: 1.25s;
     animation-name: fade;
