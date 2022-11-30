@@ -130,6 +130,7 @@ section {
     text-decoration: none;
     color: #EEE;
     padding-left: 1rem;
+    padding: 1rem;
     display: inline-flex;
 }
 
@@ -263,6 +264,14 @@ ul, li {
     border-bottom-right-radius: 500px;
 }
 
+.footer {
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2.5rem;
+}
+
 @media (max-width: 600px) {
     .nav-links {
         display: none;
@@ -284,7 +293,27 @@ ul, li {
         display: none;
     }
 
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 80%;
+        margin: 2rem;
+    }
+
     .nav-links {
         display: flex;
+    }
+}
+
+@media (min-width: 1201px) {
+    .cards {
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 0;
     }
 }
