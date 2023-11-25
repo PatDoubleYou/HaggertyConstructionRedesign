@@ -7,6 +7,10 @@
     overflow: auto;
 }*/
 
+:root {
+    --white: color: hsl(0, 0%, 96%);
+}
+
 body {
     
     background-image: url("concrete.jpg");
@@ -154,11 +158,12 @@ section {
     max-height: 100%;
 }
 
-.card a {
+.cards a, .header-card a {
     width: 100%;
     padding: 1rem;
     background-color: #2b5565;
-    color: white;
+    border-color: #EEE;
+    color: var(--white);
     text-decoration: none;
     text-align: center;
     position: relative;
@@ -170,10 +175,22 @@ section {
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    color: white;
+    color: var(--white);
     margin: 0;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+
+    animation-duration: 1.25s;
+    animation-name: fade;
+}
+
+.subtitle {
+    font-family: apotek-extrawide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+    margin-bottom: 2rem;
 
     animation-duration: 1.25s;
     animation-name: fade;
@@ -195,12 +212,35 @@ section {
     justify-content: center;
 }
 
+.cards .row {
+    justify-content: space-between;
+}
+
+.header-card {
+    display: flex;
+}
+
 .card {
     padding: 2rem;
-    margin: 2rem;
     border-style: solid;
     border-color: #555;
+}
+
+.card-small {
     max-width: 30%;
+}
+
+.card-picture {
+    object-fit: cover;
+    max-width: 50%;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-text {
+
 }
 
 .d-grid a {
@@ -283,24 +323,45 @@ ul, li {
     text-align: center;
     vertical-align: middle;
     padding: 2.5rem;
+    margin-top: 5rem;
 }
 
+/* Small Screens */
 @media (max-width: 600px) {
     .nav-links {
         display: none;
     }
 
-    .cards {
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .cards, .header-card {
         flex-direction: column;
+    }
+
+    .cards .row {
+        justify-content: center;
+    }
+
+    .card-picture {
+        max-width: 100%;
     }
 
     .card {
         margin: 0;
-        max-width: 100%;
+        max-width: 90%;
         margin-top: 2rem;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
+/* Medium Screens */
 @media (min-width: 601px) and (max-width: 1200px) {
     body {
         font-weight: 300;
@@ -315,6 +376,10 @@ ul, li {
         align-items: center;
     }
 
+    .cards .row {
+        justify-content: center;
+    }
+
     .card {
         max-width: 80%;
         margin: 2rem;
@@ -325,6 +390,7 @@ ul, li {
     }
 }
 
+/* Large screens */
 @media (min-width: 1201px) {
     .cards {
         margin: auto;
@@ -336,5 +402,9 @@ ul, li {
 
     .nav-bar, .nav-links {
         display: flex;
+    }
+
+    .nav-bar a.icon {
+        display: none;
     }
 }

@@ -8,9 +8,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-        name="description"
-        content="PatDoubleYou's content is available on many different social media platforms.
+    <meta name="description" content="PatDoubleYou's content is available on many different social media platforms.
         Use this page to find, follow and support him on your platform of choice.">
 
 
@@ -19,7 +17,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.typekit.net/qtk1dnn.css">
     <link rel="icon" type="image/x-icon" href="textured_w_small.jpg">
-
+    <link rel="icon" type="image/x-icon" href="images/2x logo square.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -28,43 +27,54 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <span class="navbar-brand" href="#"><img class="img-fluid" src="images/pat_smiling.jpeg" width="40" style="border-radius: 15px;" alt="Pat's 'W' logo."></span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">HOME</a>
-                    <a class="nav-link active" aria-current="page" href="#">SOCIALS</a>
-                    <a class="nav-link" href="commands.html">CHAT COMMANDS</a>
-                    <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
-                </div>
-            </div>
+    <!-- Nav Bar -->
+    <div class="nav-bar">
+        <a href="index.html">PatDoubleYou</a>
+        <div class="nav-links" id="NavLinks">
+            <a href="index.html" class="active">HOME</a></li>
+            <a class="" aria-current="page" href="#">SOCIALS</a>
+            <a class="" href="https://www.doubleyou.media">PAT'S AGENCY</a>
         </div>
-    </nav>
-    
-    <div class="container-sm">
+        <a href="javascript:void(0);" class="icon" id="hamburger_icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="container-sm text-center">
         <div class="row">
             <div class="col-12">
                 <h1 class="display-1 title">PATDOUBLEYOU</h1>
             </div>
         </div>
+        <p>Pat mostly focuses on YouTube right now, but you can connect with him here!</p>
         <div class="d-grid gap-2 mx-auto" id="socials-buttons">
-            <a class="btn btn-primary btn-lg btn2 py-3"href="https://www.youtube.com/channel/UCS6JeZIKa8eQUJdplIkFGmg">YOUTUBE</a>
-            <a class="btn btn-primary btn-lg btn1 py-3" href="https://www.twitch.tv/patdoubleyou">TWITCH</a>
-            <a class="btn btn-primary btn-lg btn3 py-3" href="https://www.instagram.com/doubleyou.media/">INSTAGRAM</a>
-            <a class="btn btn-primary btn-lg btn4 py-3" href="https://www.tiktok.com/@patdoubleyou">TIKTOK</a>
+            <a class="btn btn-primary btn-lg btn2 py-3"
+                href="https://www.youtube.com/channel/UCS6JeZIKa8eQUJdplIkFGmg">YOUTUBE</a>
             <a class="btn btn-primary btn-lg btn5 py-3" href="https://www.reddit.com/user/patdoubleyou">REDDIT</a>
             <a class="btn btn-primary btn-lg btn6 py-3" href="https://discord.gg/87Zmwr7Cy3">DISCORD</a>
+            <a class="btn btn-primary btn-lg btn3 py-3" href="https://www.instagram.com/doubleyou.media/">INSTAGRAM</a>
+            <!--<a class="btn btn-primary btn-lg btn1 py-3" href="https://www.twitch.tv/patdoubleyou">TWITCH</a>-->
+            <!--<a class="btn btn-primary btn-lg btn4 py-3" href="https://www.tiktok.com/@patdoubleyou">TIKTOK</a>-->
         </div>
 
         <!--<img src="Pat_with_hands_out.jpg" class="img-fluid">-->
 
     </div>
 
+
+    <script defer>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("NavLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
 </body>
+
 
 </html>
